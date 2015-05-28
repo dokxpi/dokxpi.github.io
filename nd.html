@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head><!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="utf-8">
+    <title>NT Drive калькулятор | Артур Нечипурук. Дом-страница</title>
+    <meta content="Калькулятор для расчёта значение реестра для ключа NoDrives в Windows NT (Decimal)" name="description">
+	  <link rel="stylesheet" href="fontello/css/icon.css"><!--Иконки веб-шрифтов #dokxpi-->
+      <link rel="stylesheet" href="fontello/css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/icon-ie7.css"><![endif]-->
+  <link rel="stylesheet" href="cover/c-page.css"><!--Обертка для page #dokxpi-->	 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+         <link rel="stylesheet" href="slikes/social-likes_birman.css"><!-- Social Likes -->
+ 
+ </head>
+  
+
+  
+  
+
+<body id="interior-page">
+<!--[if lt IE 9]><div style='border: 1px dashed #999; margin: 30px; padding: 10px;'><p align="center">Похоже, что вы пытаетесь использовать <u>устаревший</u> браузер. Обновите текущий или воспользуйтесь всеми преимуществами современногo <a rel="nofollow" href="https://www.google.ru/chrome" target="_blank">браузера Google Chrome</a>.</p></div><![endif]-->
+<script src="javascripts/jquery.min.js"></script> <!-- jquery: Social Likes -->
+<script src="slikes/social-likes.min.js"></script> <!-- Social Likes -->
+
+<div id="content-wrapper">
+ <div id="header">
+  <ul>
+    <li>
+      <a class="core-nav sifeather" href="#" alt="Артур Нечипурук - Blog" title="Артур Нечипурук - Blog"></a>
+    </li>
+    <li>
+      <a class="core-nav sirss" href="#" alt="Артур Нечипурук - Atom/RSS Feed" title="Артур Нечипурук - Atom/RSS Feed"></a>
+    </li>
+    <li>
+      <a rel="nofollow" class="core-nav sitwitter-circled" href="https://twitter.com/dokxpi" alt="Артур Нечипурук в Твиттере" title="Артур Нечипурук в Твиттере"></a>
+    </li>
+    <li>
+      <a rel="nofollow" class="core-nav sivkontakte" href="https://vk.com/dokxpi" alt="Артур Нечипурук во ВКонтакте" title="Артур Нечипурук во ВКонтакте"></a>
+    </li>
+    <li>
+    <a class="core-nav sicomment-empty" href="reflink.html" alt="Артур Нечипурук - Reflink" title="Артур Нечипурук - Reflink"></a>
+    </li>
+    <li>
+      <a class="core-nav siinfo-circled" href="about.html" alt="Артур Нечипурук - About" title="Артур Нечипурук - About"></a>
+    </li>
+    </ul> 
+</div>
+    
+    
+     <div style="clear:both"></div>
+     <div id="se"></div>    
+   
+<div id="content">
+<h1>NT Drive </h1>
+<div id ="noDrives" class="noDrives-leftstr">
+
+ <p id="ph">NT Drive калькулятор - калькулятор для расчёта значение реестра для ключа NoDrives/NoViewOnDrive в Windows NT (Decimal)</p>
+  <h2 id="hp">Как: скрыть "носители" через реестр Windows NT</h2> 
+ <p id="ph">Скрытие отдельных физических, съемные или оптических приводов в Моем компьютере можно в Windows с помощью "NoDrives" запись реестра. Эта запись скрывает указанные диски с моего компьютера, Windows Explorer, и в меню Отправить.</p> 
+ <p id="ph">Шаги для выполнения этой операции приведены ниже:
+
+<ol>
+     <li>Запустите редактор реестра (Win + R → <code>regedit</code> → ОК)</li>
+		
+		<li>Откройте следующий раздел реестра:
+          <ol>
+            <li type="a">для текущего пользователя <pre style="width:85%">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</pre></li>
+            <li type="a">для всех пользователей <code style="white-space: nowrap">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+          </ol>
+        </li>
+
+      <li>Создайте параметр <b>NoDrives</b> типа DWORD (<code>DWORD (32 бита)</code>)</li>
+	    <li>Щелкните правой кнопкой мыши по параметру и выберите пункт Изменить... 
+		 <ol>
+	   <li type="1">Установите переключатель на значение Десятичная</li>
+	   <li type="1">В текстовое поле введите значение/число, полученное из калькулятора: <span style="color: #258BD0; font-weight:bold" align="justify" id="new" class="bolder">67108863</span></li>
+	    </ol>
+	    </li>
+      </ol>
+ </p>
+ 
+ <h2 id="hp" style="white-space: nowrap">Как: запретить доступ к "носителям" через реестр Windows NT</h2> 
+ <div style="white-space: nowrap"><p id="ph">
+<ol>
+     <li>Запустите редактор реестра (Win + R → <code>regedit</code> → ОК)</li>
+		
+		<li>Откройте следующий раздел реестра (<code>Правка</code> → <code>Найти</code> (CTRL+F)):
+          <ol>
+            <li type="a">для текущего пользователя <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+            <li type="a">для всех пользователей <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+          </ol>
+        </li>
+
+      <li>Создайте параметр <b>NoViewOnDrive</b> типа DWORD (<code>Параметр DWORD (32 бита)</code>)</li>
+	    <li>Щелкните правой кнопкой мыши по параметру и выберите пункт Изменить... 
+		 <ol>
+	   <li type="1">Установите переключатель на значение Десятичная</li>
+	   <li type="1">В текстовое поле введите значение/число, полученное из калькулятора</li>
+	    </ol>
+	    </li>
+      </ol>
+
+ 
+ 
+ 
+ 
+ 
+ </p>
+      
+</div>
+	  </div>
+                      <p class="noDrives-rightstr">
+<!-- <kbd class="win">&nbsp;</kbd> <kbd>R</kbd> <kbd>Enter &crarr;</kbd> --> 
+<script src="javascripts/noDrives_calculator.js"></script> <!-- The 'NoDrives' Registry Key Value Calculator -->
+ <FORM Name="F">
+    <TABLE style="border:solid">
+        <TR>
+            <TD Colspan="12" ALign="CENTER">
+                <H5>NT Drive калькулятор</H5> </TD> </TR>
+
+
+  <TR> <TD Colspan="6" ALign="CENTER"> <INPUT TYPE="BUTTON" Value="&nbsp;Отметить все&nbsp;" onclick="javascript:aan();">  </TD>
+       <TD Colspan="6" ALign="CENTER"> <INPUT TYPE="BUTTON" Value="&nbsp;Сбросить все&nbsp;" onclick="javascript:aaus();"> </TD> </TR>
+  <TR><TD Align="CENTER">A </TD><TD> <INPUT TYPE="CHECKBOX" Name="A" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">B </TD><TD> <INPUT TYPE="CHECKBOX" Name="B" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">C </TD><TD> <INPUT TYPE="CHECKBOX" Name="C" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">D </TD><TD> <INPUT TYPE="CHECKBOX" Name="D" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">E </TD><TD> <INPUT TYPE="CHECKBOX" Name="E" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">F </TD><TD> <INPUT TYPE="CHECKBOX" Name="F" Value="1" CHECKED onclick="ccal()"></TD> </TR>
+
+  <TR><TD Align="CENTER">G </TD><TD> <INPUT TYPE="CHECKBOX" Name="G" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">H </TD><TD> <INPUT TYPE="CHECKBOX" Name="H" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">I </TD><TD> <INPUT TYPE="CHECKBOX" Name="I" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">J </TD><TD> <INPUT TYPE="CHECKBOX" Name="J" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">K </TD><TD> <INPUT TYPE="CHECKBOX" Name="K" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">L </TD><TD> <INPUT TYPE="CHECKBOX" Name="L" Value="1" CHECKED onclick="ccal()"></TD> </TR>
+
+  <TR><TD Align="CENTER">M </TD><TD> <INPUT TYPE="CHECKBOX" Name="M" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">N </TD><TD> <INPUT TYPE="CHECKBOX" Name="N" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">O </TD><TD> <INPUT TYPE="CHECKBOX" Name="O" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">P </TD><TD> <INPUT TYPE="CHECKBOX" Name="P" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">Q </TD><TD> <INPUT TYPE="CHECKBOX" Name="Q" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">R </TD><TD> <INPUT TYPE="CHECKBOX" Name="R" Value="1" CHECKED onclick="ccal()"></TD> </TR>
+
+  <TR><TD Align="CENTER">S </TD><TD> <INPUT TYPE="CHECKBOX" Name="S" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">T </TD><TD> <INPUT TYPE="CHECKBOX" Name="T" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">U </TD><TD> <INPUT TYPE="CHECKBOX" Name="U" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">V </TD><TD> <INPUT TYPE="CHECKBOX" Name="V" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">W </TD><TD> <INPUT TYPE="CHECKBOX" Name="W" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">X </TD><TD> <INPUT TYPE="CHECKBOX" Name="X" Value="1" CHECKED onclick="ccal()"></TD> </TR>
+
+  <TR><TD Align="CENTER">Y </TD><TD> <INPUT TYPE="CHECKBOX" Name="Y" Value="1" CHECKED onclick="ccal()"></TD>
+      <TD Align="CENTER">Z </TD><TD> <INPUT TYPE="CHECKBOX" Name="Z" Value="1" CHECKED onclick="ccal()"></TD>  </TR>
+
+  </TABLE>
+  &#160;&#160;&#160;&#160;<TABLE>
+  <TR><TD ColSpan="12"><TT>NoDrives/NoViewOnDrive=<INPUT TYPE="TEXT" Name="Wert" Value="67108863" Size="8" readonly="readonly">
+                             <INPUT TYPE="BUTTON" Value="&nbsp;Вычислить&nbsp;" onclick="javascript:ccal();"> </TD> </TR>
+</TABLE><!-- end// The 'NoDrives' Registry Key Value Calculator -->
+
+                     </p><div style="clear: left"></div>
+
+					 <div id="social"><hr>
+	<span class="social">Поделиться :</span>				 
+<div class="social-likes" data-title="NT Drive калькулятор — калькулятор для расчёта значение реестра для ключа NoDrives в Windows NT (Decimal).">	 <!-- Social Likes: https://github.com/dokxpi/social-likes/ -->
+	<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+	<div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+	<div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+	<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+	<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+	<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+</div></p><hr>
+<!-- Social Likes -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'dokxpi';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Пожалуйста, включите JavaScript, чтобы иметь возможность комментировать.<br/><br/></noscript>
+
+
+
+     </div>
+ 
+        <div id="push"></div>
+ </div>
+ 
+    
+    <div id="footer">
+       <p id="copyright">
+ <p id="contact-info">Copyright 2015 <a alt="Arthur Nechipuruk" class="core-nav" href="http://dokxpi.github.io/">Arthur Nechipuruk</a></p>
+      </p>
+</div>
+    
+ 
+ 
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
+    </body>
+
+            
+
+
+
+ 
+ 
+</html>

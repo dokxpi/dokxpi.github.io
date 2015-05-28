@@ -1,0 +1,323 @@
+﻿/*Обнулим значения отступов и полей у всех элементов веб-страницы сразу. #dokxpi */
+*{margin:0;padding:0}
+
+/* Добавляем горизонтальную полосу прокрутки. #dokxpi */
+html{overflow-y:scroll} 
+
+html, body {
+	height: 100%;
+	
+}
+
+#content-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em; /* the bottom margin is the negative value of the footer's height */
+}
+
+#footer, #push {
+	height: 4em; /* .push must be the same height as .footer */
+}
+
+body {
+  background-color: white;
+  width: 45.5em;
+  margin-left: auto;
+  margin-right: auto;
+	font-family: "Trebuchet MS", Helvetica, Arial sans-serif;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #268ED4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  background: #BBBBBB none repeat scroll 0 0;
+  border: 0 none;
+  height: 1px;
+}
+
+blockquote {
+  border: 1px dashed #999;
+  margin: 30px;
+  padding: 10px;
+}
+
+table {
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+td, th {
+	padding: 7px;
+	border-bottom: solid 1px #ddd;
+}
+
+th {
+	font-weight: bold;
+	border-bottom: solid 2px #ccc;	
+}
+
+a.core-nav {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.core-nav:hover {
+  color: #268ED4;
+  text-decoration: none;
+}
+
+#header {
+  padding-top: .8em;
+}
+
+#header ul {
+  list-style-type: none;
+}
+
+#header li {
+  float: left;
+  font-size: 36px;
+  margin-left: 84px;
+}
+
+#header li:first-child {
+  margin-left: 0;
+}
+
+#se {
+  width: 100%;
+  display: table;
+  margin-bottom: 12px;
+}
+
+#se form {
+  margin-top: 12px;
+}
+
+#se input[type=text] {
+  float: left;
+  width: 78%;
+}
+
+#se input[type=submit] {
+  float: right;
+  width: 20%;
+}
+
+#content {
+  border-top: 1px solid #999;
+  padding-top: 1em;
+  font-size: small;
+}
+
+#content h2, #content h3 {
+  margin: .5em 0;
+}
+
+#content p, #content blockquote, #content li {
+  line-height:1.5em;
+}
+
+#content img.inline-left, #inline-left img {
+  float: left;
+  margin: .3em 1em 0 0;
+}
+
+#content pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+
+#content code {
+  background-color:#EEEEFF;
+  border:1px solid #DDDDDD;
+  font-size:95%;
+  padding:0 0.2em;
+}
+
+#content pre code {
+  border: none;
+}
+
+#content ol, #post ol {
+  margin-left: 2em;
+}
+
+#content ul, #post ul {
+  margin-left: 1.5em;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  margin: 0;
+}
+
+#contact-info {
+  padding: .2em;
+  font-size: 80%;
+}
+
+#copyright a {
+  font-size: 200%;
+}
+
+#homepage {
+  position: relative;
+  width: 780px;
+}
+
+#arenas-of-awesome {
+  position: absolute;
+  top: 50%;
+}
+
+#arenas-of-awesome ul {
+  position: absolute;
+  top: -140px; /*(top: -50px;)*/
+  width: 780px;
+  height: 100px;
+}
+
+#arenas-of-awesome li {
+  list-style-type: none;
+  float: left;
+  margin-left: 35px; /*(margin-left: 104px;)*/
+  font-size: 72px;
+}
+
+#arenas-of-awesome li:first-child {
+  margin-left: 0;
+}
+
+.published_on {
+	margin-bottom: 1em;
+	font-size: .8em;
+	font-weight: normal;
+	display: block;
+}
+
+ul.posts {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0em;
+	text-indent: -1.5em;
+}
+
+ul.posts li {
+  margin: 1em 0;
+}
+
+ul.posts .title {
+  font-size: 120%;
+}
+
+#related-posts .posts {
+  clear: both;
+}
+
+#related-posts h2 a {
+  display: inline-block;
+  color: #F6892C;
+}
+
+#related-posts h2 a {
+  text-decoration: none;
+}
+
+.post-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
+  font-size: 110%;
+}
+
+#archive h1 {
+  margin-top: 0.8em;
+}
+
+blockquote p.attribution {
+  text-align:right;
+}
+
+.events td {
+  vertical-align: text-top;
+}
+
+.events th.event {
+  width: 40%;
+}
+
+td span.event-title {
+  font-weight: bold;
+	display: block;
+}
+
+td span.event-date {
+  font-size: 85%;
+}
+
+/* Добавляем цвет к заголовку второго уровня(стилевой идентификатор) и убираем отступы между абзацами. #dokxpi */
+body #hp{color:rgba(37,34,34,0.54)}body #hp+#ph{margin-top: 0.2em}
+
+/* Эффект черно-белого фото. #dokxpi */
+.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+.grayscale:hover {
+     filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+/* Меняем стандартный курсор и добавляем пунктирное подчеркивание текста. #dokxpi */
+abbr{border-bottom:1px dashed red;cursor:help}
+/* Расположить два разных текста на одной строке (twitter) #dokxpi */
+.leftstr,.rightstr{float:left;width:50%;}.rightstr{text-align:right;}
+/* Расположить два разных текста на одной строке (The 'NoDrives' Registry Key Value Calculator) #dokxpi */
+.noDrives-leftstr,.noDrives-rightstr{float:left;width:57%;padding:3px}.noDrives-rightstr{text-align:right;}
+div#noDrives{margin-bottom:-30px;}
+
+
+/* Keyboard Style */
+kbd{background:#ececec;border-color:#cdcdcd #9a9a9a #9a9a9a #cdcdcd;border-style:solid;border-width:1px 2px 2px 1px;display:inline-block;font-family:Verdana;font-size:10px;margin:5px;padding:3px 5px 2px;vertical-align:middle;white-space:nowrap}
+kbd.win{background:#ececec url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAACRklEQVR42nyTv0vrABzEPzHWNBITrfUHuHZzdLAFQYQqCjqJgriIf0ZGJ3FycfEPcHLQDiIuInYoBgfBrDqIpFUatSqIKPeGh7G+1/cObvty3H25MyTxJ66vr3Vzc8Pw8DC9vb0G/4OkhJeXl3JdV6lUSoBc19XY2JhOTk7UfNfMtmaxvb09Go0G7e3tpNNpGo0G5XKZt7c3rq6u1MqA0Rwhl8vp7u6O5+dnMpkMcRwDEIYhS0tLxHHMysoKIyMjBEHA2dnZd4RKpSIgoWVZSqVSWltbUxiGAtTZ2SlAnucJ0MLCwneW5eVlDQ0NKZ/PK5/PJ0LlclkbGxsCkt+k02kBCoJASYSjoyM5jgOAbdt4nkepVGJ6eppiscjt7S2WZfHx8cHn5yf9/f3UajUDSURRpGw2K9M0ZVmWAI2OjqpSqSiKIs3PzyeOvmJsbW1J0u8n+r6v7e1t6vU6nufx9PQEwM7ODvf398zMzFCv13l9faVWq9Hd3c3ExAS2bRtUq1UNDg7Kdd1EHdD4+LhOT0+VyWQEaHZ2Vr7va3V1VZOTk0kvCIJAPT09P74PaH19XcfHxz+su64rQJubm4lA+/7+PoVCgUKhwPv7O4eHh4RhyNTUFLu7uziOw8vLCx0dHTw+PtLW1sbc3FzrKkvi4eFBpVJJFxcXymaziQPTNGWaprq6un7Umn91PIoiFYtFOY4jQLZtC5Dv+z8EjFZr/EIcxzo/P+fg4IC+vj4WFxfJ5XLGP7fQCtVqVQCGYTAwMPDXtH8NABe/lvgo8Nf7AAAAAElFTkSuQmCC) center no-repeat;display:inline;padding:3px 5px 2px 18px;white-space:nowrap}
+kbd:hover{cursor: pointer;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;border-width:2px 1px 1px 2px;}
+
+div#social { text-align: center; margin-top:0}
+div#social hr { width:99%; margin:1em auto; border:none; background:#ccc; height:1px; color:#000;text-decoration:none}
+div span.social {font-size:10pt; margin-right: 1%}
