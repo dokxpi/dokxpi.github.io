@@ -1,5 +1,0 @@
-
-* * *
-Curriculum vitae
-* * *
-
