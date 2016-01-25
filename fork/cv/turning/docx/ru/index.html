@@ -9,23 +9,12 @@
  </head>
  <body>
  
- <SCRIPT language="JavaScript" type="text/javascript">
-<!--
-var left_time = 10;
-setTimeout("downloadFile()", 1000);
-function downloadFile()
-{
-left_time--;
-var counter = document.getElementById("counterId");
-if (counter)
-counter.innerText = left_time;
-if (left_time == 0)
-window.location = 'Нечипурук-Артур-Анатольевич_CV.docx';else
-setTimeout("downloadFile()", 1000);
-}
-//-->
-</SCRIPT>
- 
+ <script language="JavaScript">  
+var link = document.createElement('a');
+link.setAttribute('href','Нечипурук-Артур-Анатольевич_CV.docx');
+link.setAttribute('download','download');
+onload=link.click(); 
+</script> 
  
  <!--Forcing a redirect--><script language="JavaScript"> 
 var host = "dokxpi.github.io";
