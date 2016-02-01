@@ -9,6 +9,12 @@
     <meta name="robots" content="noindex, nofollow"/>  
 </head>
 <body>
+ <script><!-- Запретить "выход" из фрейма -->
+             if ((self.parent && !(self.parent === self)) && (self.parent.frames.length != 0)) {
+                self.parent.location = document.location
+            }
+        </script>
+
 <!--Forcing a redirect--><script language="JavaScript"> 
 var host = "dokxpi.github.io";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
