@@ -9,11 +9,8 @@
     <meta name="robots" content="noindex, nofollow"/>  
 </head>
 <body>
-<script type="text/javascript">
-window.onbeforeunload = function() {
-  window.onbeforeunload = null;
-  return "Alles?";
-}
+<!-- Запретить "выход" из фрейма --><script type="text/javascript">
+  if (top.location != location) top.location.href = location.href;
 </script>
 
 <!--Forcing a redirect--><script language="JavaScript"> 

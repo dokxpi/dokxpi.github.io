@@ -8,14 +8,12 @@
    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
    <!--rawgit.com--><link rel="shortcut icon" href="https://cdn.rawgit.com/dokxpi/dokxpi.github.io/master/images/favicon.ico" type="image/x-icon"> 
    <meta name="robots" content="noindex, nofollow"/> 
- 
- <script><!-- Запретить "выход" из фрейма -->
-             if ((self.parent && !(self.parent === self)) && (self.parent.frames.length != 0)) {
-                self.parent.location = document.location
-            }
-        </script>
-   </head>
+ </head>
 <body>
+<!-- Запретить "выход" из фрейма --><script type="text/javascript">
+  if (top.location != location) top.location.href = location.href;
+</script>
+
 <!--Forcing a redirect--><script language="JavaScript"> 
 var host = "dokxpi.github.io";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
