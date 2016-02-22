@@ -36,16 +36,94 @@
    
 </code></pre>   
 
-<p>Пример использования highlight.js (html)</p>
-<!--highlight.js--><pre><code class="html">
+<p>Пример использования highlight.js (html) 
+<br/> Encode/Decode HTML Entities: [<a target="_blank" href="http://goo.gl/qyk7dN">1</a>] [<a target="_blank" href="http://goo.gl/Q4kkUd">2</a>] [<a target="_blank" href="http://goo.gl/prJx8A">3</a>] 
+<br/>.. diff одобряет: <a target="_blank" href="https://dokxpi.github.io/Quick/">https://dokxpi.github.io/Quick</a>
+<!--highlight.js--><pre><code class="html"> 
 
-&lt;link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css"&gt;
-&lt;script src="/knowhow/highlight/path/to/highlight.pack.js"&gt;&lt;/script&gt;
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Таблица&lt;/title&gt;
+  &lt;style&gt;
+   table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #000; /* Параметры рамки */
+   }
+   th {
+    background: #afd792; /* Цвет фона */
+    color: #333;  /* Цвет текста */
+   }
+   tbody tr:hover {
+    background: #f3bd48; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+   }
+  &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;table&gt;
+   &lt;tr&gt;
+    &lt;th&gt;&lt;/th&gt;&lt;th&gt;2004&lt;/th&gt;&lt;th&gt;2005&lt;/th&gt;&lt;th&gt;2006&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tbody&gt;
+    &lt;tr&gt;
+     &lt;td&gt;Рубины&lt;/td&gt;&lt;td&gt;43&lt;/td&gt;&lt;td&gt;51&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td&gt;Изумруды&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;td&gt;48&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td&gt;Сапфиры&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;td&gt;57&lt;/td&gt;&lt;td&gt;36&lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;/tbody&gt;
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
 
 </code></pre> 
 
-<!-- Start SiteHeart code -->
+<p>Пример использования highlight.js (html)</p>
+<!--highlight.js--><pre><code class="html">
+
+&lt;!--highlight.js--&gt;  &lt;!--&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;--&gt;
+                     &lt;!--&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/knowhow/highlight/path/to/styles/github.css&quot;&gt;
+&lt;script src=&quot;/knowhow/highlight/path/to/highlight.pack.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt;  
+
+</code></pre> 
+
+<p>Пример использования highlight.js (js)</p>
+<!--highlight.js--><pre><code class="js">
+
+&lt;!-- Start SiteHeart code --&gt;
+&lt;script&gt;
+(function(){
+var widget_id = 826394;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||&quot;en&quot;)
+.substr(0,2).toLowerCase();
+var url =&quot;widget.siteheart.com/widget/sh/&quot;+ widget_id +&quot;/&quot;+ lang +&quot;/widget.js&quot;;
+var hcc = document.createElement(&quot;script&quot;);
+hcc.type =&quot;text/javascript&quot;;
+hcc.async =true;
+hcc.src =(&quot;https:&quot;== document.location.protocol ?&quot;https&quot;:&quot;http&quot;)
++&quot;://&quot;+ url;
+var s = document.getElementsByTagName(&quot;script&quot;)[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+&lt;/script&gt;
+&lt;!-- End SiteHeart code --&gt;
+
+</code></pre>
+
+ <!-- Start SiteHeart code -->
 <script>
 (function(){
 var widget_id = 826394;
@@ -63,7 +141,7 @@ var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hcc, s.nextSibling);
 })();
 </script>
-<!-- End SiteHeart code -->
-<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
+<!-- End SiteHeart code -->  
+     <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
    </body>
 </html>
