@@ -12,21 +12,26 @@
  </head>
  <body>
 <h1>highlight.js</h1>
-   <p>Пример использования highlight.js (css)</p>
 
+<p>Пример использования highlight.js (css)</p>
 <!--highlight.js--><pre><code class="css">
 
-   p {
-    border: 1px solid red;
-    padding: 10px;
+   li { list-style-type: none; } /* Убираем исходную нумерацию у списка */
+   ol { counter-reset: list1; } /* Инициируем счетчик */
+   ol li:before {
+    counter-increment: list1; /* Увеличиваем значение счетчика */
+    content: counter(list1) ". "; /* Выводим число */
    }
+   ol ol { counter-reset: list2; } /* Инициируем счетчик вложенного списка */
+   ol ol li:before {
+    counter-increment: list2; /* Увеличиваем значение счетчика вложенного списка */
+    content: counter(list1) "." counter(list2) ". "; /* Выводим число */
+   }
+   
 </code></pre>   
-
 
 <p>Пример использования highlight.js (html)</p>
 <!--highlight.js--><pre><code class="html">
-
-
 
 <!DOCTYPE html>
 <html>
@@ -46,8 +51,6 @@
   медведи больше ничего не боятся.</p>
  </body>
 </html>
-
- 
 
 </code></pre> 
 
