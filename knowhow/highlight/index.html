@@ -17,25 +17,23 @@
 <!--highlight.js--><pre><code class="css">
 
 
+@font-face {
+  font-family: Chunkfive; src: url('Chunkfive.otf');
+}
 
+body, .usertext {
+  color: #F0F0F0; background: #600;
+  font-family: Chunkfive, sans;
+}
 
- <body>
-  <ol>
-   <li>Пункт
-    <ol>
-     <li>Подпункт</li>
-     <li>Подпункт</li>
-     <li>Подпункт</li>
-    </ol>
-   </li>
-   <li>Пункт
-    <ol>
-     <li>Подпункт</li>
-     <li>Подпункт</li>
-    </ol>
-   </li>
-  </ol>
- </body>
+@import url(print.css);
+@media print {
+  a[href^=http]::after {
+    content: attr(href)
+  }
+}
+
+ 
 
 </code></pre>   
    
