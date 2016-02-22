@@ -17,21 +17,43 @@
 <!--highlight.js--><pre><code class="html">
 
 
-@font-face {
-  font-family: Chunkfive; src: url('Chunkfive.otf');
-}
-
-body, .usertext {
-  color: #F0F0F0; background: #600;
-  font-family: Chunkfive, sans;
-}
-
-@import url(print.css);
-@media print {
-  a[href^=http]::after {
-    content: attr(href)
-  }
-}
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>counter-reset</title>
+  <style>
+   li { list-style-type: none; } /* Убираем исходную нумерацию у списка */
+   ol { counter-reset: list1; } /* Инициируем счетчик */
+   ol li:before {
+    counter-increment: list1; /* Увеличиваем значение счетчика */
+    content: counter(list1) ". "; /* Выводим число */
+   }
+   ol ol { counter-reset: list2; } /* Инициируем счетчик вложенного списка */
+   ol ol li:before {
+    counter-increment: list2; /* Увеличиваем значение счетчика вложенного списка */
+    content: counter(list1) "." counter(list2) ". "; /* Выводим число */
+   }
+  </style>
+ </head>
+ <body>
+  <ol>
+   <li>Пункт
+    <ol>
+     <li>Подпункт</li>
+     <li>Подпункт</li>
+     <li>Подпункт</li>
+    </ol>
+   </li>
+   <li>Пункт
+    <ol>
+     <li>Подпункт</li>
+     <li>Подпункт</li>
+    </ol>
+   </li>
+  </ol>
+ </body>
+</html>
 
  
 
