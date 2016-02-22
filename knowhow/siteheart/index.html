@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="none"/>
+  <title>SiteHeart</title>
+  <style>
+   p {
+    margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 1em; /* Отступ снизу */
+   }
+  </style>
+<!--highlight.js-->  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>-->
+                     <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">-->
+<link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css">
+<script src="/knowhow/highlight/path/to/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script><!--end../ highlight.js-->  
+ </head>
+ <body>
+<h1><font size="4">highlight.js</font></h1>
+
+<p>Пример использования highlight.js (css)</p>
+<!--highlight.js--><pre><code class="css">
+
+   li { list-style-type: none; } /* Убираем исходную нумерацию у списка */
+   ol { counter-reset: list1; } /* Инициируем счетчик */
+   ol li:before {
+    counter-increment: list1; /* Увеличиваем значение счетчика */
+    content: counter(list1) ". "; /* Выводим число */
+   }
+   ol ol { counter-reset: list2; } /* Инициируем счетчик вложенного списка */
+   ol ol li:before {
+    counter-increment: list2; /* Увеличиваем значение счетчика вложенного списка */
+    content: counter(list1) "." counter(list2) ". "; /* Выводим число */
+   }
+   
+</code></pre>   
+
+<p>Пример использования highlight.js (html)</p>
+<!--highlight.js--><pre><code class="html">
+
+&lt;link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css"&gt;
+&lt;script src="/knowhow/highlight/path/to/highlight.pack.js"&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt; 
+
+</code></pre> 
+
+<!-- Start SiteHeart code -->
+<script>
+(function(){
+var widget_id = 826374;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"en")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+var hcc = document.createElement("script");
+hcc.type ="text/javascript";
+hcc.async =true;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+<!-- End SiteHeart code -->
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
+   </body>
+</html>
