@@ -3,40 +3,56 @@
  <head>
   <meta charset="utf-8">
   <meta name="robots" content="none"/>
-  <title>highlight.js</title>
-  <style>
-   p {
-    margin-top: 0.5em; /* Отступ сверху */
-    margin-bottom: 1em; /* Отступ снизу */
-   }
-  </style>
-<!--highlight.js-->  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>-->
-                     <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">-->
-<link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css">
-<script src="/knowhow/highlight/path/to/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script><!--end../ highlight.js-->  
- </head>
+  <title>Syntax highlighting for the Web</title>
+  <style>p{margin-top:.5em;margin-bottom:1em}</style>
+       <!--highlight.js--><link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css">
+       <script src="/knowhow/highlight/path/to/highlight.pack.js"></script>
+       <script>hljs.initHighlightingOnLoad();</script><!--end../ highlight.js-->  
+    </head>
  <body>
-<h1><font size="4">highlight.js</font></h1>
+<h1><font size="4">Как подключить Highlight.js</font></h1>
 
-<p>Пример использования highlight.js (css)</p>
-<!--highlight.js--><pre><code class="css">
+<p>Подключаем highlight.js из CDN (23 languages and 1 styles)</p></p>
+<!--highlight.js--><pre><code class="html">
 
-   li { list-style-type: none; } /* Убираем исходную нумерацию у списка */
-   ol { counter-reset: list1; } /* Инициируем счетчик */
-   ol li:before {
-    counter-increment: list1; /* Увеличиваем значение счетчика */
-    content: counter(list1) ". "; /* Выводим число */
-   }
-   ol ol { counter-reset: list2; } /* Инициируем счетчик вложенного списка */
-   ol ol li:before {
-    counter-increment: list2; /* Увеличиваем значение счетчика вложенного списка */
-    content: counter(list1) "." counter(list2) ". "; /* Выводим число */
-   }
-   
-</code></pre>   
+&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
-<p>Пример использования highlight.js (html) 
+</code></pre> 
+
+<p>Подключение <a target="_blank" href="https://highlightjs.org/download/">пользовательского пакета</a> (150 languages and 71 styles)</p>
+<!--highlight.js--><pre><code class="html">
+
+&lt;!--highlight.js--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/knowhow/highlight/path/to/styles/github.css&quot;&gt;
+       &lt;script src=&quot;/knowhow/highlight/path/to/highlight.pack.js&quot;&gt;&lt;/script&gt;
+       &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt;  
+
+</code></pre> 
+
+<p>Использование Hightlight.js</p>
+<pre><code class="html">
+
+&lt;pre&gt;&lt;code&gt;&lt;!--автоопределение--&gt;
+p{margin-top:.5em;margin-bottom:1em}
+&lt;/code&gt;&lt;/pre&gt;
+
+</code></pre>
+
+<pre><code class="html">
+
+&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;!--задать самостоятельно в виде названия класса--&gt;
+p{margin-top:.5em;margin-bottom:1em}
+&lt;/code&gt;&lt;/pre&gt;
+
+</code></pre>
+
+<p>Как отобразить теги на веб-странице?</p>
+
+
+
+
+<p>The bare minimum for using highlight.js on a web page is linking to the library along with one of the styles and calling</p> 
 <br/> Encode/Decode HTML Entities: [<a target="_blank" href="http://goo.gl/qyk7dN">1</a>] [<a target="_blank" href="http://goo.gl/Q4kkUd">2</a>] [<a target="_blank" href="http://goo.gl/prJx8A">3</a>] 
 <br/>.. diff одобряет: <a target="_blank" href="https://dokxpi.github.io/Quick/">https://dokxpi.github.io/Quick</a>
 <!--highlight.js--><pre><code class="html"> 
@@ -87,16 +103,7 @@
 
 </code></pre> 
 
-<p><font color="#AD9999" size="2" face="Arial">Подключение highlight.js</font></p> 
-<!--highlight.js--><pre><code class="html">
 
-&lt;!--highlight.js--&gt;  &lt;!--&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;--&gt;
-                     &lt;!--&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/knowhow/highlight/path/to/styles/github.css&quot;&gt;
-&lt;script src=&quot;/knowhow/highlight/path/to/highlight.pack.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt;  
-
-</code></pre> 
 
    
      <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
