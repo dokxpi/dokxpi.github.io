@@ -20,13 +20,13 @@
 &lt;script type=&quot;text/javascript&quot; src=&quot;/knowhow/jswidgets/upTT.js&quot;&gt;&lt;/script&gt;&lt;!--end../ up button--&gt; 
 </code></pre>
 <p><small>В данном коде можно изменить некоторые параметры под себя
-<!--highlight.js--><pre><code class="js">
+<!--highlight.js--><pre><code class="html">
 $(document).ready(function() {
-		
-	$('body').append('<div class="button-up" style="display:none; opacity:0.7; width:85px; height:100%; position:fixed; left:0px; top:0px; cursor:pointer; text-align:center; line-height:100px; color:rgb(172, 188, 206); font-weight:100;"><font size="2">&#9650; Наверх</font></div>');
+	
+	$('body').append('&lt;div class=&quot;button-up&quot; style=&quot;display:none; opacity:0.7; width:85px; height:100%; position:fixed; left:0px; top:0px; cursor:pointer; text-align:center; line-height:100px; color:rgb(172, 188, 206); font-weight:100;&quot;&gt;&lt;font size=&quot;2&quot;&gt;&amp;#9650; Наверх&lt;/font&gt;&lt;/div&gt;');
 		
 	$ (window).scroll (function () {
-		if ($ (this).scrollTop () > 700) {
+		if ($ (this).scrollTop () &gt; 700) {
 			$ ('.button-up').fadeIn();
 		} else {
 			$ ('.button-up').fadeOut();
