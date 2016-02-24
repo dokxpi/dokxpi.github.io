@@ -13,7 +13,7 @@
 			$ ('.button-up').fadeIn();
 		} else {
 			$ ('.button-up').fadeOut();
-		}
+		} 
 	});
 	
 	$('.button-up').click(function(){
