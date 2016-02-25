@@ -8,6 +8,11 @@
        <!--highlight.js--><link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css">
        <script src="/knowhow/highlight/path/to/highlight.min.js"></script>
        <script>hljs.initHighlightingOnLoad();</script><!--end../ highlight.js-->  
+	   <script>   hljs.configure({useBR: true});
+
+$('div.code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});                            </script>
 	  </head>
 	<body> 
 <h1><font size="4">Как подключить Highlight.js</font></h1>
