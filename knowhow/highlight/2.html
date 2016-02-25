@@ -7,13 +7,14 @@
   <style>p{margin-top:.5em;margin-bottom:1em}</style>
        <!--highlight.js--><link rel="stylesheet" href="/knowhow/highlight/path/to/styles/github.css">
        <script src="/knowhow/highlight/path/to/highlight.min.js"></script>
-       <!--up button--><script type="text/javascript" src="/knowhow/jslibs/jquery-1.5.min.js"></script>    
-	   <script>   hljs.configure({useBR: true});
+       <script>hljs.initHighlightingOnLoad();</script><!--end../ highlight.js-->  
+	   
+	  </head>
+hljs.configure({useBR: true});
 
 $('div.code').each(function(i, block) {
   hljs.highlightBlock(block);
-});                               </script>
-	  </head>
+});                             
 	<body> 
 <h1><font size="4">Как подключить Highlight.js</font></h1>
 
