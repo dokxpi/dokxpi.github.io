@@ -6,4 +6,5 @@
 * в качестве дополнительного резервного копирования; 
 * очевидно, для управления версиями git.
 ***
+
 [Моя шпаргалка по работе с Git](https://github.com/dokxpi/dokxpi.github.io/blob/master/command.txt)
