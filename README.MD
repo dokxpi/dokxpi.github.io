@@ -5,6 +5,5 @@
 * чтобы получить опыт использования Git и GitHub;
 * в качестве дополнительного резервного копирования; 
 * очевидно, для управления версиями git.
-* 
 
-[44](/dokxpi.github.io/blob/master/command.txt)
+[Моя шпаргалка по работе с Git](https://github.com/dokxpi/dokxpi.github.io/blob/master/command.txt)
