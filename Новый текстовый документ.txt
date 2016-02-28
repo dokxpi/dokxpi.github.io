@@ -1,0 +1,7 @@
+$ git commit --amend -m 'update'  Ч изменить комментарий к последнему коммиту
+
+$ git reset --hard HEAD~   Ч удалить последний коммит
+$ git reset --hard HEAD~3  Ч удалить последние 3
+$git reset --hard HEAD@{1} Ч отменить последнее действие
+
+$ git reset --hard <commit> Ч точка, к которой нужно откатитьс€
