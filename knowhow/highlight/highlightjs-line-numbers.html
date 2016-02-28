@@ -14,29 +14,25 @@ p{margin-top:.5em;margin-bottom:1em}</style>
 	<body> 
 <h1><font size="4">Как подключить Highlight.js</font></h1>
 
-<p>Подключаем Highlight.js из CDN (23 languages and 1 styles)</p>
-<!--highlight.js--><pre><code class="html">
+<p>Подключаем Highlight.js из CDN (23 languages and 1 styles)</p><!--highlight.js--><pre><code class="html">
 &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js&quot;&gt;&lt;/script&gt;
  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css&quot;&gt;
 &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 </code></pre> 
 
 <p>Подключение <a href="https://highlightjs.org/download/">пользовательского пакета</a> (150 languages and 71 styles)</p>
-<!--highlight.js--><pre><code class="html">
-&lt;!--highlight.js--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/knowhow/highlight/path/to/styles/github.css&quot;&gt;
+<!--highlight.js--><pre><code class="html">&lt;!--highlight.js--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/knowhow/highlight/path/to/styles/github.css&quot;&gt;
        &lt;script src=&quot;/knowhow/highlight/path/to/highlight.pack.js&quot;&gt;&lt;/script&gt;
        &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt;  
 </code></pre> 
 
 <p>Использование Hightlight.js</p>
-<!--highlight.js--><pre><code class="html">
-&lt;pre&gt;&lt;code&gt;&lt;!--автоопределение--&gt;
+<!--highlight.js--><pre><code class="html">&lt;pre&gt;&lt;code&gt;&lt;!--автоопределение--&gt;
 p{margin-top:.5em;margin-bottom:1em}
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 <p><small>&</small></p>
-<!--highlight.js--><pre><code class="html">
-&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;!--задать самостоятельно в виде названия класса--&gt;
+<!--highlight.js--><pre><code class="html">&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;!--задать самостоятельно в виде названия класса--&gt;
 p{margin-top:.5em;margin-bottom:1em}
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
@@ -44,8 +40,7 @@ p{margin-top:.5em;margin-bottom:1em}
 <p>Как отобразить теги на веб-странице?<br/>
 <br/><small>1. пропустить html код через Entity Generator: [<a href="http://goo.gl/qyk7dN">1</a>] [<a href="http://goo.gl/Q4kkUd">2</a>] [<a href="http://goo.gl/prJx8A">3</a>] [<a href="http://www.htmlescape.net/htmlescape_tool.html">4</a>]</small> 
 <br/><small>2. самостоятельно задать html класс</small></p>
-<!--highlight.js--><pre><code class="html">
-&lt;!--highlight.js--&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;
+<!--highlight.js--><pre><code class="html">&lt;!--highlight.js--&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;
 
 &amp;lt;!DOCTYPE&nbsp;HTML&amp;gt;<br/>&amp;lt;html&amp;gt;<br/>&nbsp;&amp;lt;head&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;meta&nbsp;charset=&amp;quot;utf-8&amp;quot;&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;meta&nbsp;name=&amp;quot;robots&amp;quot;&nbsp;content=&amp;quot;none&amp;quot;/&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;title&amp;gt;&#x041f;&#x0440;&#x0438;&#x043c;&#x0435;&#x0440;&nbsp;&#x0432;&#x0435;&#x0431;-&#x0441;&#x0442;&#x0440;&#x0430;&#x043d;&#x0438;&#x0446;&#x044b;&amp;lt;/title&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;style&amp;gt;p{margin-top:.5em;margin-bottom:1em}&amp;lt;/style&amp;gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;lt;!--highlight.js--&amp;gt;&amp;lt;link&nbsp;rel=&amp;quot;stylesheet&amp;quot;&nbsp;href=&amp;quot;/knowhow/highlight/path/to/styles/github.css&amp;quot;&amp;gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;lt;script&nbsp;src=&amp;quot;/knowhow/highlight/path/to/highlight.pack.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;&amp;lt;!--end../&nbsp;highlight.js--&amp;gt;<br/>&nbsp;&amp;lt;/head&amp;gt;<br/>&nbsp;&amp;lt;body&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;h1&amp;gt;&#x0417;&#x0430;&#x0433;&#x043e;&#x043b;&#x043e;&#x0432;&#x043e;&#x043a;&amp;lt;/h1&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;!--&nbsp;&#x041a;&#x043e;&#x043c;&#x043c;&#x0435;&#x043d;&#x0442;&#x0430;&#x0440;&#x0438;&#x0439;&nbsp;--&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;p&amp;gt;&#x041f;&#x0435;&#x0440;&#x0432;&#x044b;&#x0439;&nbsp;&#x0430;&#x0431;&#x0437;&#x0430;&#x0446;.&amp;lt;/p&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;p&amp;gt;&#x0412;&#x0442;&#x043e;&#x0440;&#x043e;&#x0439;&nbsp;&#x0430;&#x0431;&#x0437;&#x0430;&#x0446;.&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;<br/>&nbsp;&nbsp;&amp;lt;p&amp;gt;&#x0412;&#x0442;&#x043e;&#x0440;&#x043e;&#x0439;&nbsp;&#x0430;&#x0431;&#x0437;&#x0430;&#x0446;.&amp;lt;/p&amp;gt;<br/>&nbsp;&amp;lt;/body&amp;gt;<br/>&amp;lt;/html&amp;gt;
 
@@ -53,8 +48,7 @@ p{margin-top:.5em;margin-bottom:1em}
 </code></pre>
 
 <p><small>На выходе получаем</small></p>
-<!--highlight.js--><pre><code class="html">
-&lt;!DOCTYPE HTML&gt;
+<!--highlight.js--><pre><code class="html">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
  &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
