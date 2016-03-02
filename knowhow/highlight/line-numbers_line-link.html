@@ -7,11 +7,7 @@
        <!--highlight.js--><link rel="stylesheet" href="/knowhow/highlight/path/to/styles/googlecode.css">
        <script src="/knowhow/highlight/path/to/highlight.min.js"></script> 
 	   <script src="/knowhow/highlight/src/line-link/highlightjs-line-numbers.min.js"></script> 
-       <script>hljs.initHighlightingOnLoad(); 
-	   hljs.initLineNumbersOnLoad({
-    withLinks: true
-});
-</script><!--end../ highlight.js-->
+       <script>hljs.initHighlightingOnLoad(); hljs.initLineNumbersOnLoad({withLinks: true});</script><!--end../ highlight.js-->
 <style>.hljs-line-numbers{text-align:right;border-right:1px solid #ccc;color:#999;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .hljs-line-numbers a{text-decoration:none;color:#999}.hljs-line-numbers a:target{color:red;text-decoration:underline;outline:none}
 p{margin-top:.5em;margin-bottom:1em}</style>	   
@@ -71,8 +67,10 @@ p{margin-top:.5em;margin-bottom:1em}
   &lt;p&gt;Второй абзац.&lt;/small&gt;&lt;/p&gt;
   &lt;p&gt;Второй абзац.&lt;/p&gt;
  &lt;/body&gt;
-&lt;/html&gt;
- </code></pre> 
+&lt;/html&gt;</code></pre> 
+
+<p>Чтобы отключить выделение вообще, использовать nohighlight класс</p>
+<pre><code class="nohighlight"> &lt;pre&gt;&lt;code class=&quot;nohighlight&quot;&gt;...&lt;/code&gt;&lt;/pre&gt; </code></pre>
  
 <p>Нумерация строк в highlight.js <small>[<a href="https://goo.gl/ayfqfR">1</a>]</small></p>
 <p><small>Подключение..</small></p>
@@ -81,7 +79,7 @@ p{margin-top:.5em;margin-bottom:1em}
 	   &lt;script src=&quot;/knowhow/highlight/src/highlightjs-line-numbers.min.js&quot;&gt;&lt;/script&gt;
        &lt;script&gt;hljs.initHighlightingOnLoad(); hljs.initLineNumbersOnLoad();&lt;/script&gt;&lt;!--end../ highlight.js--&gt;  
 </code></pre>
-<p><small>Теперь немного подсластим, добавив стилей</small></p>
+<p><small>Последнее, что нам осталось, — добавить стили</small></p>
 <pre><code class="css">.hljs-line-numbers {
 	text-align: right;
 	border-right: 1px solid #ccc;
@@ -93,11 +91,28 @@ p{margin-top:.5em;margin-bottom:1em}
 	-ms-user-select: none;
 	user-select: none;
 }</code></pre>  
-<p>Готово! <small><a href="/knowhow/highlight/highlightjs-line-numbers.html">Демонстрация</a> работы плагина line-numbers</small></p>  
+<p>Готово! <small><a href="/knowhow/highlight/line-numbers.html">Демонстрация</a> работы плагина line-numbers</small></p>  
 <p><small>Скачать: <a href="/knowhow/highlight/src/highlightjs-line-numbers.min.js" download>highlightjs-line-numbers.min.js</a> & <a href="/knowhow/highlight/src/highlightjs-line-numbers.js" download>highlightjs-line-numbers.js</a></small></p>
-<p>To disable highlighting altogether use the nohighlight class</p>
-<pre><code class="nohighlight"> &lt;pre&gt;&lt;code class=&quot;nohighlight&quot;&gt;...&lt;/code&gt;&lt;/pre&gt; </code></pre>   
-  <p><a href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)">Вернуться назад</a></p><!--JavaScript код, имитирующий нажатие кнопки Назад в браузере-->
+<p>Расширенные возможности плагина line-numbers</p>
+<p><small><a href="https://github.com/wcoder/highlightjs-line-numbers.js/tree/feature/line-link#links">Links</a></small></p>
+<pre><code class="js">
+hljs.initLineNumbersOnLoad({
+    withLinks: true
+});
+</code></pre> 
+<pre><code class="css">.hljs-line-numbers a {
+    text-decoration: none;
+    color: #999;
+}
+.hljs-line-numbers a:target {
+    color: #ff0000;
+    text-decoration: underline;
+    outline: none;
+}</code></pre> 
+<p><small>Скачать: <a href="/knowhow/highlight/src/line-link/highlightjs-line-numbers.min.js" download>highlightjs-line-numbers.min.js</a> & <a href="/knowhow/highlight/src/line-link/highlightjs-line-numbers.js" download>highlightjs-line-numbers.js</a></small></p>
+   
+<p><a href="/knowhow/highlight/">Вернуться назад</a></p>
+  <!--<p><a href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)">Вернуться назад</a></p> JavaScript код, имитирующий нажатие кнопки Назад в браузере-->
     <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
    </body>
 </html> 
