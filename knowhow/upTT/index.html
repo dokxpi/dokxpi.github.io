@@ -15,46 +15,9 @@ p{margin-top:.5em;margin-bottom:1em}</style>
    </head>
    <body>
 <h1><font size="4">Виджет кнопки вверх как ВКонтакте</font></h1>
-<p>Подключение виджета на Ваш сайт (секция head)</p>
-<p><small>Кнопка выполнена в том же стиле, что и аналогичная кнопка в популярной социальной сети ВКонтакте.</small></p>
 <!--highlight.js--><pre><code class="html">&lt;!--up button--&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/knowhow/jslibs/jquery/2.2.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/knowhow/jswidgets/upTT.js&quot;&gt;&lt;/script&gt;&lt;!--end../ up button--&gt; 
-</code></pre>
-<p><small>В <a href="/knowhow/jswidgets/upTT.js">данном коде</a> можно изменить некоторые параметры под себя</small>
-<!--highlight.js--><pre><code class="html">$(document).ready(function() {
-	
-	$('body').append('&lt;div class=&quot;button-up&quot; style=&quot;display:none; opacity:0.7; width:85px; height:100%; position:fixed; left:0px; top:0px; cursor:pointer; text-align:center; line-height:100px; color:rgb(172, 188, 206); font-weight:100;&quot;&gt;&lt;font size=&quot;2&quot;&gt;&amp;#9650; Наверх&lt;/font&gt;&lt;/div&gt;');
-		
-	$ (window).scroll (function () {
-		if ($ (this).scrollTop () &gt; 700) {
-			$ ('.button-up').fadeIn();
-		} else {
-			$ ('.button-up').fadeOut();
-		} 
-	});
-	
-	$('.button-up').click(function(){
-		$('body,html').animate({
-            scrollTop: 0
-        }, 1400);
-        return false;
-	});
-	
-	$('.button-up').hover(function() {
-			$(this).animate({
-				'opacity':'1',
-			}).css({'background-color':'#e7ebf0','color':'#6a86a4'});
-		}, function(){
-			$(this).animate({
-				'opacity':'0.7'
-			}).css({'background':'none','color':'#d3dbe4'});;
-	});
-		
-});
-</code></pre>
-<ul><li>Строка 3 отвечает за вывод самой области для прокрутки страницы. В ней прописаны основные стили для отображения кнопки. в принципе, данные параметры должны подойти практически каждому.<br/> Но может потребоваться и отредактировать их под себя;</li>
-<li>В строке 7 в скобках имеется число 700, которое отвечает за момент появления кнопки. То есть, кнопка будет появляться только после прокрутки 700 пикселей вниз. <br/>Рекомендую тут подобрать такое значение, чтобы прокрутка была возможной только тогда, когда с поля зрения пропадает основное меню сайта или какие-то другие важные элементы в навигации;</li>
-<li>В строке 17 значение 1400 отвечает за скорость прокрутки. Чем меньше значение, тем быстрее возвращение вверх страницы.</li></ul></p></small><!--#scroll--><style>#scroll{margin-bottom: 4000px;}</style><div id="scroll"></div>     
+</code></pre></style><div id="scroll"></div>     
 	  <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
    </body>
 </html>
