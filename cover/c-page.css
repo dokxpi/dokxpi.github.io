@@ -218,7 +218,7 @@ a.core-nav:hover {
 #arenas-of-awesome li {
   list-style-type: none;
   float: left;
-  margin-left: 35px; /*(margin-left: 104px;)*/
+  margin-left: 35px !important; /*(margin-left: 104px;)*/
   font-size: 60px;
 }
 
